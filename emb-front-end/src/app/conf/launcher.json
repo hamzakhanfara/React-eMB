@@ -1,0 +1,66 @@
+[
+    {
+      "application": "Snapshot",
+      "name": "snapshot",
+      "subtitle": "launcher.card.snapshot.title",
+      "routerlink": "/snapshot",
+      "licenseRequired": "basic"
+    },
+    {
+      "application": "Orbit",
+      "name": "orbit",
+      "subtitle": "launcher.card.orbit.title",
+      "routerlink": "/orbit",
+      "licenseRequired": "basic"
+    },
+    {
+      "application": "Trending",
+      "name": "trending",
+      "subtitle": "launcher.card.trending.title",
+      "routerlink": "/trending",
+      "licenseRequired": "basic"
+    },
+    {
+      "application": "ControlPanel",
+      "name": "controlpanel",
+      "subtitle": "launcher.card.controlpanel.title",
+      "routerlink": "/controlpanel",
+      "licenseRequired": "basic"
+    },
+    {
+      "application": "SignalGenerator",
+      "name": "signalgenerator",
+      "subtitle": "launcher.card.signalgenerator.title",
+      "routerlink": "/signalgenerator",
+      "licenseRequired": "certified"
+    },
+    {
+      "application": "EventViewer",
+      "name": "eventviewer",
+      "subtitle": "launcher.card.eventviewer.title",
+      "routerlink": "/eventviewer",
+      "licenseRequired": "basic"
+    },
+    {
+      "application": "ParameterEditor",
+      "name": "parameterEditor",
+      "subtitle": "launcher.card.parameterEditor.title",
+      "routerlink": "/parameterEditor",
+      "licenseRequired": "factory"
+    },
+    {
+      "application": "Analyzer",
+      "name": "analyzer",
+      "subtitle": "launcher.card.analyzer.title",
+      "routerlink": "/analyzer",
+      "licenseRequired": "factory"
+    },
+    {
+      "application": "ConfigPanel",
+      "name": "configPanel",
+      "subtitle": "launcher.card.configPanel.title",
+      "routerlink": "/configPanel",
+      "licenseRequired": "factory"
+    }
+  ]
+  
