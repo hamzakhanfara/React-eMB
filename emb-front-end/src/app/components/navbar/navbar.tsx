@@ -13,6 +13,8 @@ import FormGroup from '@mui/material/FormGroup';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import { useEffect } from 'react'
+import ProfilModal from '../profil/profilModal';
+import Link from 'next/link';
 export default function MenuAppBar() {
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -43,7 +45,7 @@ export default function MenuAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            eMBScope
+            <Link href="/">eMBScope</Link>
           </Typography>
           {auth && (
             <div>
@@ -72,9 +74,9 @@ export default function MenuAppBar() {
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
               >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
+                <MenuItem onClick={handleClose}><ProfilModal /></MenuItem>
                 <MenuItem onClick={handleClose}>My account</MenuItem>
-                <MenuItem onClick={handleClose}>Sign up</MenuItem>
+                <MenuItem onClick={handleClose}><Link href="/signup">Sign up</Link></MenuItem>
               </Menu>
             </div>
           )}

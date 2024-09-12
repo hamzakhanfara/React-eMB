@@ -12,6 +12,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import skfImage from '@/app/assets/skf.png'
+import Link from 'next/link';
 const launcherApps: ILauncherApp[] = Config as ILauncherApp[];
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: '#fff',
@@ -29,7 +30,7 @@ function GridList() {
     const lengthofApps = launcherApps.length
     const apps = [];
     for (let i = 0; i < lengthofApps; i++){
-        apps.push(<Grid item xs={4} md={4} key={i}><Card><CardMedia sx={{ height: 140 }} image={skfImage.src} title="green iguana" /><CardContent><Typography gutterBottom variant="h6" component="div">{launcherApps[i].application}</Typography><Typography variant="body2" sx={{ color: 'text.secondary' }}>description à voir</Typography></CardContent><CardActions><Button size="small">Open</Button><Button size="small">Learn More</Button></CardActions></Card></Grid>)
+        apps.push(<Grid item xs={4} md={4} key={i}><Card><CardMedia sx={{ height: 140 }} image={skfImage.src} title="green iguana" /><CardContent><Typography gutterBottom variant="h6" component="div">{launcherApps[i].application}</Typography><Typography variant="body2" sx={{ color: 'text.secondary' }}>description à voir</Typography></CardContent><CardActions><Link href={launcherApps[i].routerlink}><Button size="small">Open</Button></Link><Button size="small">Learn More</Button></CardActions></Card></Grid>)
     }
     return(
         <Box margin={'80px'} sx={{ flexGrow: 1 }}>
